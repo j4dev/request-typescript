@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/request.js\""
   },
   "keywords": [],
   "author": "jadev",
@@ -15,8 +15,3 @@
     "typescript": "^3.7.2"
   }
 }
-npm init -y 
-npm install nodemon -D  
-npm install typescript -D 
-npm install concurrently -D
-git init
