@@ -26,7 +26,6 @@ function listEmpresas() {
     return __awaiter(this, void 0, void 0, function* () {
         var empresa = "";
         let respuesta = yield requestEmpresas();
-        //console.log(respuesta);
         if (respuesta[0].validacion) {
             respuesta.forEach((empresas) => {
                 empresa = "<div class=\"card float-left\" style=\"width: 19rem;\">" +
