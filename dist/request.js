@@ -34,18 +34,20 @@ function listEmpresas() {
                     "<h5 class=\"card-title\">" + empresas.nombre + "</h5>" +
                     "<p class=\"card-text\">" +
                     "<b>Dirección:</b>" + empresas.direccion + ".</br>" +
-                    "<b>Telefono:</b>" + empresas.telefono1 + "</br>" +
+                    "<b>Telefono:</b>" + empresas.telefonos + "</br>" +
                     "<b>Horario de atención:</b>" + empresas.horario + "</p>" +
                     "<a href=\"" + empresas.foto + "\" class=\"btn btn-primary\">HACER UN PEDIDO</a>" +
                     "</div>" +
                     "</div>";
+                console.log(empresa);
             });
         }
         else {
         }
     });
 }
-/*"<div class=\"card float-left\" style=\"width: 19rem;\">
+/*Elemento html sin variables del response
+"<div class=\"card float-left\" style=\"width: 19rem;\">
             <img src=\"http://localhost/img/p1.jpg\" class=\"card-img-top\" alt=\"Imagen Empresa\">
             <div class=\"card-body\">
                 <h5 class=\"card-title\">Papios</h5>
