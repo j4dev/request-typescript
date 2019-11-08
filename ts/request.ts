@@ -13,7 +13,7 @@ async function requestEmpresas(){
 };
 
 async function listEmpresas(){
-    var empresa: String = "";
+    var empresa: string = "";
     let respuesta = await requestEmpresas();
     
     if (respuesta[0].validacion) {
@@ -29,13 +29,15 @@ async function listEmpresas(){
             "<a href=\""+empresas.foto+"\" class=\"btn btn-primary\">HACER UN PEDIDO</a>"+
             "</div>"+
             "</div>";
-            console.log(empresa);
+            
             
         });
     } else {
         
     }
     
+    var listado = <HTMLElement> document.getElementById("listempresas");
+    listado.innerHTML = empresa;
 }
 /*Elemento html sin variables del response
 "<div class=\"card float-left\" style=\"width: 19rem;\">

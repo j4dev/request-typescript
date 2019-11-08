@@ -39,11 +39,12 @@ function listEmpresas() {
                     "<a href=\"" + empresas.foto + "\" class=\"btn btn-primary\">HACER UN PEDIDO</a>" +
                     "</div>" +
                     "</div>";
-                console.log(empresa);
             });
         }
         else {
         }
+        var listado = document.getElementById("listempresas");
+        listado.innerHTML = empresa;
     });
 }
 /*Elemento html sin variables del response
